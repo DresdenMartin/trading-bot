@@ -1,58 +1,42 @@
 # Trading Bot
 
-Automated trading bot with email alerts.
+Automated trading bot with email alerts. Can run locally or on **GitHub Actions** (schedule or manual).
 
-## Email alerts
+## Run on GitHub
 
-The **email feature is implemented** in `alerts.py` and will work when:
+1. **Add secrets** in the repo: **Settings** → **Secrets and variables** → **Actions**.  
+   See [GITHUB_SETUP.md](GITHUB_SETUP.md) for the full list (Alpaca, OpenAI, and optional email alert secrets).
 
-1. **Environment variables** are set (e.g. in `.env`):
-   - `ALERT_EMAIL_TO` – recipient address
-   - `ALERT_SMTP_HOST` (e.g. `smtp.gmail.com`)
-   - `ALERT_SMTP_PORT` (e.g. `587`)
-   - `ALERT_SMTP_USER` – your email
-   - `ALERT_SMTP_PASSWORD` – app password (for Gmail, use an [App Password](https://support.google.com/accounts/answer/185833))
+2. **Manual run**: **Actions** → **Scheduled Trader** → **Run workflow** → choose mode (`mag7`, `invest`, or `close`) → **Run workflow**.
 
-2. **Your main trading script** imports and calls:
-   ```python
-   from alerts import send_trade_alert
-   send_trade_alert('invest_flow', result)  # or 'analyze_mag7_and_invest', 'reallocate_full', 'close_all'
-   ```
+3. **Schedule**: The workflow runs at 09:00 ET and 16:30 ET on weekdays. Configure `SCHEDULED_TRADER_MODE` in secrets if you want a different default than `mag7`.
 
-Behavior:
+4. **Email alerts on GitHub**: Add secrets `ALERT_EMAIL_TO`, `ALERT_SMTP_HOST`, `ALERT_SMTP_PORT`, `ALERT_SMTP_USER`, `ALERT_SMTP_PASSWORD` so the bot can send alerts when it runs in Actions.
 
-- Sends an email when there are **stock ratings and/or orders** (including when the outcome is all **hold**).
-- Each email includes a **per-symbol summary**: rating, score, and a short **analysis summary** (and rationale bullets when available).
+**Note:** The workflow needs `eod_fetcher.py`, `indicators.py`, and `analyze_with_chatgpt.py` in the repo. If you see an `ImportError` for those, add those files and push.
 
-## Missing code
+## Email alerts (local or GitHub)
 
-This repo currently contains:
+The email feature in `alerts.py` works when the right env vars are set (locally in `.env`, or in GitHub as secrets):
 
-- `alerts.py` – full email alert logic (ready to use)
-- `project_config.py` – paths for data, cache, logs, and artifacts
-- `scripts/git-push-with-token.sh` – push to GitHub using a PAT (no password prompt)
+- `ALERT_EMAIL_TO`, `ALERT_SMTP_HOST`, `ALERT_SMTP_PORT`, `ALERT_SMTP_USER`, `ALERT_SMTP_PASSWORD`
 
-The **main trader** (`scheduled_trader.py`) and its dependencies (e.g. `eod_fetcher`, `indicators`, `analyze_with_chatgpt`) are not in this folder. If you have them elsewhere (e.g. iCloud or another clone):
+Behavior: sends an email when there are stock ratings and/or orders (including when the outcome is all hold), with a per-symbol summary and analysis snippet.
 
-1. Copy `scheduled_trader.py`, `eod_fetcher.py`, `indicators.py`, `analyze_with_chatgpt.py`, and any other required files into this directory.
-2. Ensure `scheduled_trader.py` has:
-   - `from alerts import send_trade_alert`
-   - Calls to `send_trade_alert(flow, result)` after each run (e.g. invest_flow, analyze_mag7_and_invest, reallocate_full, close_all).
-
-Then the email alerts will work with your full pipeline.
-
-## Test email
-
-To confirm SMTP and env are correct without running the full bot:
+## Test email locally
 
 ```bash
-python -c "
-from dotenv import load_dotenv
-load_dotenv()
-from alerts import send_trade_alert
-send_trade_alert('test', {'candidates': [{'symbol': 'AAPL', 'suggested': 'hold', 'score': 50}], 'note': 'Test run'})
-print('Check your inbox.')
-"
+pip install -r requirements.txt
+python scripts/test_email_alert.py
 ```
 
-Requires `python-dotenv` and a `.env` with the `ALERT_*` variables.
+Requires a `.env` with the `ALERT_*` variables.
+
+## Repo contents
+
+- `alerts.py` – email alert logic
+- `scheduled_trader.py` – main trader (invest / Mag7 / close)
+- `project_config.py` – paths
+- `scripts/run_scheduled_trader.sh` – wrapper for mag7 / invest / close
+- `.github/workflows/scheduled-trader.yml` – GitHub Action (schedule + manual)
+- [GITHUB_SETUP.md](GITHUB_SETUP.md) – how to configure secrets and run on GitHub

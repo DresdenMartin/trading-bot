@@ -1,0 +1,85 @@
+# Scheduled Trading Bot - runs Mag7 analysis and optionally places orders
+# Triggered by cron (pre-open 09:00 ET, post-close 16:30 ET) and manually via workflow_dispatch
+
+name: Scheduled Trader
+
+on:
+  schedule:
+    # 09:00 ET pre-open, 16:30 ET post-close (cron is UTC: ET+5 in winter, ET+4 in summer)
+    - cron: '0 14 * * 1-5'
+    - cron: '30 21 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        required: false
+        default: 'mag7'
+        type: choice
+        options:
+          - mag7
+          - invest
+          - close
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  run-trader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Create working directories
+        run: mkdir -p logs artifacts data
+
+      - name: Run scheduled trader
+        env:
+          ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ALPACA_PAPER: ${{ secrets.ALPACA_PAPER }}
+          PLACE_ORDER: ${{ secrets.PLACE_ORDER }}
+          INVEST_FORCE: '1'
+          POLYGON_KEY: ${{ secrets.POLYGON_KEY }}
+          OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+          USE_WEB_RESEARCH: ${{ secrets.USE_WEB_RESEARCH }}
+          REALLOCATE_FULL: ${{ secrets.REALLOCATE_FULL }}
+          TOP_ALLOCATE_COUNT: ${{ secrets.TOP_ALLOCATE_COUNT }}
+          SCHEDULED_TRADER_MODE: ${{ secrets.SCHEDULED_TRADER_MODE }}
+          MANUAL_MODE: ${{ github.event.inputs.mode }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          ALERT_SMTP_HOST: ${{ secrets.ALERT_SMTP_HOST }}
+          ALERT_SMTP_PORT: ${{ secrets.ALERT_SMTP_PORT }}
+          ALERT_SMTP_USER: ${{ secrets.ALERT_SMTP_USER }}
+          ALERT_SMTP_PASSWORD: ${{ secrets.ALERT_SMTP_PASSWORD }}
+        run: |
+          export SCHEDULED_TRADER_MODE="${MANUAL_MODE:-$SCHEDULED_TRADER_MODE:-mag7}"
+          bash scripts/run_scheduled_trader.sh || true
+
+      - name: Upload logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: trader-logs-${{ github.run_id }}
+          path: |
+            logs/
+            artifacts/
+            data/
+          retention-days: 7
