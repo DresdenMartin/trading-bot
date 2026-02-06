@@ -15,7 +15,7 @@ Automated trading bot with email alerts. Can run locally or on **GitHub Actions*
 
 4. **Email alerts on GitHub**: Add secrets `ALERT_EMAIL_TO`, `ALERT_SMTP_HOST`, `ALERT_SMTP_PORT`, `ALERT_SMTP_USER`, `ALERT_SMTP_PASSWORD` so the bot can send alerts when it runs in Actions.
 
-**Note:** The workflow needs `eod_fetcher.py`, `indicators.py`, and `analyze_with_chatgpt.py` in the repo. If you see an `ImportError` for those, add those files and push.
+The repo includes `eod_fetcher.py`, `indicators.py`, and `analyze_with_chatgpt.py` so the workflow can run without import errors.
 
 ## Email alerts (local or GitHub)
 
