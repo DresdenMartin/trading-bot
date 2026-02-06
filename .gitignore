@@ -1,0 +1,11 @@
+.env
+.github-token
+*.pyc
+__pycache__/
+.DS_Store
+data/
+logs/*.jsonl
+*.log
+.venv/
+venv/
+env/
