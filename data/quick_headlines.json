@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-09-18T03:05:09.009662",
+  "results": {
+    "AAPL": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "MSFT": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "GOOG": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "AMZN": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "TSLA": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "NVDA": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    },
+    "META": {
+      "source": "yahoo",
+      "text": "Today's news",
+      "url": "https://www.yahoo.com/news/"
+    }
+  }
+}

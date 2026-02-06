@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio History</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div>
+          <p class="kicker">Portfolio History</p>
+          <h1>Equity Curve</h1>
+          <p class="subhead">
+            Snapshot of portfolio equity collected from live Alpaca pulls.
+          </p>
+        </div>
+        <div class="clock">
+          <a class="link" href="/">Live Desk</a>
+          <div class="label">Last refresh</div>
+          <div id="last-refresh" class="time">--</div>
+          <div id="refresh-status" class="status">Idle</div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div class="card wide">
+          <div class="card-head">
+            <h2>Portfolio Value</h2>
+            <button id="refresh-btn" class="ghost">Refresh</button>
+          </div>
+          <canvas id="history-chart" width="1000" height="360"></canvas>
+          <div id="history-meta" class="status"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="history.js"></script>
+  </body>
+</html>

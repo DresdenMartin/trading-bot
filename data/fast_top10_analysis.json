@@ -1,0 +1,175 @@
+{
+  "timestamp": "2025-09-18T03:25:27.955787",
+  "results": [
+    {
+      "symbol": "GOOG",
+      "latest_price": 249.8500061035156,
+      "news_sent": 0.06666666666666667,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 59,
+      "combined": 0.13,
+      "details": {
+        "news_sent": 0.06666666666666667,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.07, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "AMZN",
+      "latest_price": 231.6199951171875,
+      "news_sent": 0.07866666666666666,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 1.0,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 59,
+      "combined": 0.13540000000000002,
+      "details": {
+        "news_sent": 0.07866666666666666,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.08, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "AAPL",
+      "latest_price": 238.9900054931641,
+      "news_sent": 0.036,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 1.0,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.1162,
+      "details": {
+        "news_sent": 0.036,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.04, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "MSFT",
+      "latest_price": 510.0199890136719,
+      "news_sent": 0.006,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 1.0,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.1027,
+      "details": {
+        "news_sent": 0.006,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.01, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "TSLA",
+      "latest_price": 425.8599853515625,
+      "news_sent": 0.012,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 1.0,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.10540000000000001,
+      "details": {
+        "news_sent": 0.012,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.01, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "NVDA",
+      "latest_price": 170.2899932861328,
+      "news_sent": 0.0,
+      "news_count": 0,
+      "news_sources": [],
+      "news_confidence": 0.0,
+      "live_vs_fallback": false,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 45,
+      "combined": -0.1,
+      "details": {
+        "news_sent": 0.0,
+        "news_strength": -0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.00, news_count=0, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "META",
+      "latest_price": 775.719970703125,
+      "news_sent": 0.0,
+      "news_count": 0,
+      "news_sources": [],
+      "news_confidence": 0.0,
+      "live_vs_fallback": false,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 45,
+      "combined": -0.1,
+      "details": {
+        "news_sent": 0.0,
+        "news_strength": -0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.00, news_count=0, rsi=None, analyst=0.50"
+    }
+  ]
+}

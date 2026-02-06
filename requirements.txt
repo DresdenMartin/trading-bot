@@ -1,0 +1,11 @@
+requests
+python-dotenv
+yfinance
+pandas
+numpy
+openai
+holidays
+python-dateutil
+beautifulsoup4
+pytest
+flask

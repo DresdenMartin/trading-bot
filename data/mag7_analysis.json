@@ -1,0 +1,598 @@
+{
+  "timestamp": "2026-01-04T21:41:14.769353+00:00",
+  "scores": [
+    {
+      "symbol": "NVDA",
+      "score": 58,
+      "rationale": "news_sent=0.25, news_count=5, recency=0.33, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.24906107833347713,
+        "news_count": 5,
+        "news_recency": 0.3333333333333333,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 1,
+      "rationale_bullets": [
+        "MACD below signal",
+        "News sentiment +0.25 (5 articles)",
+        "Catalysts: Survey shows majority of Americans (especially younger investors) bullish on AI stocks, Narrative reinforces long-term demand outlook for AI leaders like NVDA/MSFT, Bubble concerns downplayed; encourages steady buying on volatility"
+      ],
+      "confidence": 56,
+      "decision": "hold",
+      "score_raw": -0.11115757806976338,
+      "analysis": {
+        "summary": "NVDA closed at $176.67. News flow is modestly positive (aggregate sentiment ~0.25) and largely driven by bullish AI-investing narratives and long-term demand expectations, but it\u2019s mostly opinion/survey-based rather than company-specific catalysts. Technically, momentum looks slightly bearish near-term: price is roughly flat vs the 21-EMA and MACD is below signal with a negative histogram, suggesting weakening trend/possible consolidation. With limited technical and fundamental context (missing RSI, SMAs, analyst data), the best read is mildly positive sentiment but not enough edge for an aggressive call.",
+        "signals": {
+          "news_sentiment": {
+            "score": 0.24906107833347713,
+            "confidence": 0.376,
+            "interpretation": "mildly_positive"
+          },
+          "trend": {
+            "price": 176.6699981689453,
+            "ema21": 176.77051920682695,
+            "price_vs_ema21": -0.0005688169834283515,
+            "interpretation": "flat_to_slightly_below_ema"
+          },
+          "momentum": {
+            "macd": -0.6258494451422791,
+            "macd_signal": -0.36161851174283455,
+            "macd_hist": -0.2642309333994446,
+            "interpretation": "bearish"
+          },
+          "volume": {
+            "recent_volume": 234778574.0,
+            "interpretation": "high_absolute_volume_unknown_relative"
+          },
+          "data_gaps": [
+            "sma20",
+            "sma50",
+            "sma200",
+            "rsi14",
+            "atr",
+            "rvol",
+            "analyst_entries"
+          ]
+        },
+        "suggested_action": "hold",
+        "confidence": 0.56,
+        "recommended_size": "Market-weight / core position; add only on pullbacks until momentum improves",
+        "rationale": "News tone is mildly supportive for AI leaders, but it is not NVDA-specific and has moderate confidence. Meanwhile MACD/negative histogram indicates near-term momentum is deteriorating. With key indicators (RSI/SMAs) and analyst inputs missing, risk of overfitting is high; holding (or waiting for stronger technical confirmation) is more prudent than initiating an aggressive buy."
+      }
+    },
+    {
+      "symbol": "GOOGL",
+      "score": 55,
+      "rationale": "news_sent=0.23, news_count=5, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.2290214123633787,
+        "news_count": 5,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 2,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.23 (5 articles)",
+        "Catalysts: Bullish opinion piece calling NFLX and UBER undervalued, Netflix deal narrative (Warner Bros./HBO) framed as long-term positive despite leverage concerns, Uber autonomy threat downplayed; partnerships (e.g., Nvidia) highlighted"
+      ],
+      "confidence": 62,
+      "decision": "hold",
+      "score_raw": 0.24561024602902778,
+      "analysis": {
+        "summary": "GOOGL last traded at 254.72. News flow is mildly positive (aggregate sentiment ~0.23) but the provided articles are mostly broad/sector or mention Alphabet indirectly (e.g., Waymo, Google data center/nuclear tie-up), not clear company-specific catalysts. Technicals available are modestly supportive: price is above the 21-day EMA (~251.74) and MACD is positive with a positive histogram, suggesting near-term bullish momentum. However, key indicators (RSI, SMAs, ATR) and analyst data are missing, limiting conviction. Overall: slight positive bias, but not enough evidence here for an aggressive stance.",
+        "signals": {
+          "price_vs_ema21": "bullish",
+          "macd": "bullish",
+          "news_sentiment": "slightly_bullish",
+          "data_completeness": "low"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.56,
+        "recommended_size": "neutral / core position; add only incrementally (e.g., 25-50% of typical buy tranche) if accumulating",
+        "rationale": "Momentum signals (close > EMA21; MACD>signal with positive histogram) lean bullish, but the news set is not strongly GOOGL-specific and overall inputs lack major confirming indicators (RSI/SMAs/volatility/analyst revisions). A hold (or small incremental add only for long-term accumulation) balances mild positives against incomplete evidence."
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "score": 55,
+      "rationale": "news_sent=0.10, news_count=20, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.09864999999999997,
+        "news_count": 20,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 3,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.10 (20 articles)",
+        "Catalysts: general, Article argues insider buy is not enough; recommends staying on sidelines, Weak fundamentals: DTC revenue down, margins down, earnings down"
+      ],
+      "confidence": 60,
+      "decision": "hold",
+      "score_raw": 0.20232925000000002,
+      "analysis": {
+        "summary": "AAPL closed at 245.5 with mildly positive news sentiment overall. Technicals lean bullish: price is above the 21-day EMA (~237.9) and MACD is positive with a positive histogram, suggesting upward momentum. News flow is mixed but includes multiple bullish takes on Apple\u2019s fundamentals (strong iPhone cycle, record FY results, services growth) alongside some valuation/macro caution (e.g., Berkshire trimming Apple in prior periods). With limited indicator coverage (missing RSI/SMA levels) and no analyst dataset provided, the setup supports maintaining exposure rather than aggressively adding.",
+        "signals": {
+          "trend": {
+            "price_above_ema21": true,
+            "ema21": 237.8686070165692
+          },
+          "momentum": {
+            "macd": 0.9313682783293586,
+            "macd_signal": 0.28138140270811396,
+            "macd_hist": 0.6499868756212447,
+            "macd_bullish": true
+          },
+          "news": {
+            "news_aggregate_sentiment": 0.09864999999999997,
+            "news_confidence": 0.396,
+            "headline_bias": "slightly_positive"
+          },
+          "liquidity": {
+            "recent_volume": 162456387.0
+          },
+          "data_gaps": {
+            "rsi14_missing": true,
+            "sma_levels_missing": true,
+            "analyst_entries_missing": true
+          }
+        },
+        "suggested_action": "hold",
+        "confidence": 0.62,
+        "recommended_size": "core position; add only incrementally (e.g., small tranche) rather than full-size due to limited signal coverage/valuation sensitivity",
+        "rationale": "Bullish momentum signals (price > EMA21, MACD positive) and slightly positive, moderately confident news flow favor holding. However, missing RSI/SMA context and mixed valuation narratives reduce conviction for an outright buy at this price."
+      }
+    },
+    {
+      "symbol": "META",
+      "score": 53,
+      "rationale": "news_sent=0.23, news_count=4, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.23322961303577153,
+        "news_count": 4,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 4,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.23 (4 articles)",
+        "Catalysts: AI data center electricity demand surge narrative boosts utility growth outlook, Mentions of specific AI/data center projects and large capex plans (NEE, D, ETR), Bullish EPS/dividend growth guidance reiterated for utilities tied to data center markets"
+      ],
+      "confidence": 63,
+      "decision": "hold",
+      "score_raw": 0.25871625519376407,
+      "analysis": {
+        "summary": "META shows mildly positive news sentiment with several recent AI-themed articles highlighting ad-tech strength, AI-driven engagement improvements, and supportive valuation narratives. Technicals provided are modestly bullish: price is above the 21-day EMA and MACD is positive with a positive histogram, suggesting upward momentum. However, key risk/confirmation indicators (RSI, ATR, SMAs) are missing, and the news set includes broad sector commentary not solely META-specific. Overall, the setup leans constructive but not high-conviction given limited technical breadth and no analyst-data feed.",
+        "signals": {
+          "price_vs_ema21": "bullish",
+          "macd_trend": "bullish",
+          "news_sentiment": "slightly_bullish",
+          "news_confidence": 0.5075000000000001,
+          "data_completeness": "limited"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.58,
+        "recommended_size": "Small/starter position (e.g., 1-2% of portfolio) or add incrementally on pullbacks",
+        "rationale": "Momentum signals (MACD>signal, positive histogram; price above EMA21) and mildly positive AI/ad-tech news flow support a constructive bias, but missing RSI/ATR/longer SMAs and lack of analyst metrics reduce conviction. Prefer holding existing exposure or sizing in gradually rather than aggressively buying at current levels."
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "score": 49,
+      "rationale": "news_sent=0.28, news_count=2, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.2750970964232195,
+        "news_count": 2,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 5,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.28 (2 articles)",
+        "Catalysts: Bullish narrative ahead of early-February earnings, Highlights strong recent revenue growth and deal momentum, Notes extreme valuation risk as a potential overhang"
+      ],
+      "confidence": 55,
+      "decision": "hold",
+      "score_raw": 0.09230659630845348,
+      "analysis": {
+        "summary": "AMZN closed at 231.48 with mildly positive news sentiment (~0.28) and moderate news confidence (~0.51). Recent coverage leans bullish, emphasizing improving profitability, high-margin advertising growth, and re-accelerating AWS growth tied to AI demand. Technical signals available are limited, but EMA21 is essentially flat vs. price and MACD is slightly positive, suggesting modest upward momentum rather than a strong trend. With incomplete longer-term trend/RSI data and no analyst data provided, conviction is moderate. Overall, the balance of catalysts and light bullish momentum supports a cautious buy/accumulate stance rather than an aggressive entry.",
+        "signals": {
+          "price": 231.47999572753903,
+          "news_sentiment": 0.2750970964232195,
+          "news_confidence": 0.505,
+          "technical": {
+            "ema21": 231.61123513299316,
+            "macd": 0.09066598709637219,
+            "macd_signal": 0.08100308740181082,
+            "macd_hist": 0.00966289969456137,
+            "bias": "slightly_bullish"
+          },
+          "catalysts": [
+            "Bullish narrative ahead of early-February earnings",
+            "High-margin ads growth and improving profitability",
+            "AWS growth tied to AI demand"
+          ],
+          "risks": [
+            "Limited technical/valuation context in provided data",
+            "Earnings/event risk (pre-earnings narratives can reverse)"
+          ]
+        },
+        "suggested_action": "buy",
+        "confidence": 0.58,
+        "recommended_size": "Small to medium (e.g., 1/3 to 1/2 position; add on confirmation or pullbacks)",
+        "rationale": "News flow is net positive and focused on durable drivers (AWS/AI and ads margin expansion). Available momentum gauges (MACD slightly positive; price ~ EMA21) point to mild upside bias, but missing RSI/long SMAs and no analyst/valuation inputs cap conviction\u2014favor phased buying/accumulation rather than full-size entry."
+      }
+    },
+    {
+      "symbol": "TSLA",
+      "score": 47,
+      "rationale": "news_sent=-0.04, news_count=3, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": -0.03877902759295367,
+        "news_count": 3,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 6,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment -0.04 (3 articles)",
+        "Catalysts: Bullish opinion piece highlighting valuation-driven upside for NFLX and UBER, Discussion of NFLX Warner Bros. acquisition and manageable leverage, UBER autonomous-vehicle threat framed as overblown; partnerships cited"
+      ],
+      "confidence": 59,
+      "decision": "hold",
+      "score_raw": 0.17089913823972636,
+      "analysis": {
+        "summary": "TSLA closed at 426.07. Technical momentum is mildly positive: price is above EMA21 (414.04) and MACD is positive with a positive histogram (2.83 vs 1.24; hist 1.59), suggesting upward bias. News flow is slightly negative overall (aggregate sentiment -0.039) with moderate confidence (~0.41); the included headlines are largely opinion-driven and mixed, with one AI-themed bullish mention of Tesla and unrelated negative EV-industry commentary (Rivian) that could still weigh on sector sentiment. With no RSI/SMA trend context and no analyst inputs, conviction is limited. Net: modest technical strength but muted/uncertain fundamental-news edge, favoring a hold rather than an aggressive stance.",
+        "signals": {
+          "price_vs_ema21": "bullish",
+          "macd": "bullish",
+          "macd_histogram": "bullish",
+          "news_sentiment": "slightly_bearish",
+          "news_confidence": 0.4066666666666667,
+          "data_gaps": [
+            "sma20",
+            "sma50",
+            "sma200",
+            "rsi14",
+            "atr",
+            "rvol",
+            "analyst_entries"
+          ]
+        },
+        "suggested_action": "hold",
+        "confidence": 0.56,
+        "recommended_size": "small",
+        "rationale": "Bullish near-term momentum (above EMA21; MACD positive and strengthening) is offset by slightly negative, low-to-moderate confidence news sentiment and missing key risk/trend metrics (RSI, SMAs, ATR). Holding (or only a small position) balances the positive tape with limited informational edge."
+      }
+    },
+    {
+      "symbol": "MSFT",
+      "score": 41,
+      "rationale": "news_sent=0.00, news_count=0, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.0,
+        "news_count": 0,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 7,
+      "rationale_bullets": [
+        "MACD below signal",
+        "News sentiment +0.00 (0 articles)"
+      ],
+      "confidence": 54,
+      "decision": "hold",
+      "score_raw": -0.08546121058181842,
+      "analysis": {
+        "summary": "MSFT is trading at 517.93, slightly above its EMA21 (514.19), which is modestly supportive. However, momentum signals are weakening: MACD (-0.69) is below its signal line (-0.48) with a negative histogram (-0.21), suggesting bearish momentum in the near term. News and analyst inputs are effectively unavailable/neutral (no articles; sentiment 0.0), and key confirmation indicators (RSI, SMAs, ATR, relative volume) are missing, limiting signal reliability.",
+        "signals": {
+          "trend": {
+            "price_vs_ema21": "bullish",
+            "ema21": 514.1896854721371,
+            "close": 517.9299926757812
+          },
+          "momentum": {
+            "macd": -0.6870675451896204,
+            "macd_signal": -0.4813733652170872,
+            "macd_hist": -0.20569417997253325,
+            "macd_state": "bearish"
+          },
+          "volume": {
+            "recent_volume": 52262514.0,
+            "rvol": null
+          },
+          "sentiment": {
+            "news_aggregate_sentiment": 0.0,
+            "news_confidence": 0.0,
+            "analyst_sentiment": {}
+          },
+          "data_gaps": [
+            "sma20",
+            "sma50",
+            "sma200",
+            "rsi14",
+            "atr",
+            "atr_percent",
+            "rvol",
+            "session_vwap"
+          ]
+        },
+        "suggested_action": "hold",
+        "confidence": 0.42,
+        "recommended_size": null,
+        "rationale": "Mixed technicals (price above EMA21 but MACD bearish) and significant missing indicators/sentiment data reduce conviction. Holding is preferred until trend confirmation (SMAs/RSI) and volatility/volume context (ATR/RVOL) are available or MACD momentum turns up."
+      }
+    }
+  ],
+  "top": [
+    {
+      "symbol": "NVDA",
+      "score": 58,
+      "rationale": "news_sent=0.25, news_count=5, recency=0.33, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.24906107833347713,
+        "news_count": 5,
+        "news_recency": 0.3333333333333333,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 1,
+      "rationale_bullets": [
+        "MACD below signal",
+        "News sentiment +0.25 (5 articles)",
+        "Catalysts: Survey shows majority of Americans (especially younger investors) bullish on AI stocks, Narrative reinforces long-term demand outlook for AI leaders like NVDA/MSFT, Bubble concerns downplayed; encourages steady buying on volatility"
+      ],
+      "confidence": 56,
+      "decision": "hold",
+      "score_raw": -0.11115757806976338,
+      "analysis": {
+        "summary": "NVDA closed at $176.67. News flow is modestly positive (aggregate sentiment ~0.25) and largely driven by bullish AI-investing narratives and long-term demand expectations, but it\u2019s mostly opinion/survey-based rather than company-specific catalysts. Technically, momentum looks slightly bearish near-term: price is roughly flat vs the 21-EMA and MACD is below signal with a negative histogram, suggesting weakening trend/possible consolidation. With limited technical and fundamental context (missing RSI, SMAs, analyst data), the best read is mildly positive sentiment but not enough edge for an aggressive call.",
+        "signals": {
+          "news_sentiment": {
+            "score": 0.24906107833347713,
+            "confidence": 0.376,
+            "interpretation": "mildly_positive"
+          },
+          "trend": {
+            "price": 176.6699981689453,
+            "ema21": 176.77051920682695,
+            "price_vs_ema21": -0.0005688169834283515,
+            "interpretation": "flat_to_slightly_below_ema"
+          },
+          "momentum": {
+            "macd": -0.6258494451422791,
+            "macd_signal": -0.36161851174283455,
+            "macd_hist": -0.2642309333994446,
+            "interpretation": "bearish"
+          },
+          "volume": {
+            "recent_volume": 234778574.0,
+            "interpretation": "high_absolute_volume_unknown_relative"
+          },
+          "data_gaps": [
+            "sma20",
+            "sma50",
+            "sma200",
+            "rsi14",
+            "atr",
+            "rvol",
+            "analyst_entries"
+          ]
+        },
+        "suggested_action": "hold",
+        "confidence": 0.56,
+        "recommended_size": "Market-weight / core position; add only on pullbacks until momentum improves",
+        "rationale": "News tone is mildly supportive for AI leaders, but it is not NVDA-specific and has moderate confidence. Meanwhile MACD/negative histogram indicates near-term momentum is deteriorating. With key indicators (RSI/SMAs) and analyst inputs missing, risk of overfitting is high; holding (or waiting for stronger technical confirmation) is more prudent than initiating an aggressive buy."
+      }
+    },
+    {
+      "symbol": "GOOGL",
+      "score": 55,
+      "rationale": "news_sent=0.23, news_count=5, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.2290214123633787,
+        "news_count": 5,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 2,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.23 (5 articles)",
+        "Catalysts: Bullish opinion piece calling NFLX and UBER undervalued, Netflix deal narrative (Warner Bros./HBO) framed as long-term positive despite leverage concerns, Uber autonomy threat downplayed; partnerships (e.g., Nvidia) highlighted"
+      ],
+      "confidence": 62,
+      "decision": "hold",
+      "score_raw": 0.24561024602902778,
+      "analysis": {
+        "summary": "GOOGL last traded at 254.72. News flow is mildly positive (aggregate sentiment ~0.23) but the provided articles are mostly broad/sector or mention Alphabet indirectly (e.g., Waymo, Google data center/nuclear tie-up), not clear company-specific catalysts. Technicals available are modestly supportive: price is above the 21-day EMA (~251.74) and MACD is positive with a positive histogram, suggesting near-term bullish momentum. However, key indicators (RSI, SMAs, ATR) and analyst data are missing, limiting conviction. Overall: slight positive bias, but not enough evidence here for an aggressive stance.",
+        "signals": {
+          "price_vs_ema21": "bullish",
+          "macd": "bullish",
+          "news_sentiment": "slightly_bullish",
+          "data_completeness": "low"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.56,
+        "recommended_size": "neutral / core position; add only incrementally (e.g., 25-50% of typical buy tranche) if accumulating",
+        "rationale": "Momentum signals (close > EMA21; MACD>signal with positive histogram) lean bullish, but the news set is not strongly GOOGL-specific and overall inputs lack major confirming indicators (RSI/SMAs/volatility/analyst revisions). A hold (or small incremental add only for long-term accumulation) balances mild positives against incomplete evidence."
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "score": 55,
+      "rationale": "news_sent=0.10, news_count=20, recency=0.00, momentum=0.00, analyst=0.50",
+      "details": {
+        "news_sent": 0.09864999999999997,
+        "news_count": 20,
+        "news_recency": 0.0,
+        "tech": 0.0,
+        "momentum": 0.0,
+        "analyst_buy_ratio": 0.5
+      },
+      "rank": 3,
+      "rationale_bullets": [
+        "MACD above signal",
+        "News sentiment +0.10 (20 articles)",
+        "Catalysts: general, Article argues insider buy is not enough; recommends staying on sidelines, Weak fundamentals: DTC revenue down, margins down, earnings down"
+      ],
+      "confidence": 60,
+      "decision": "hold",
+      "score_raw": 0.20232925000000002,
+      "analysis": {
+        "summary": "AAPL closed at 245.5 with mildly positive news sentiment overall. Technicals lean bullish: price is above the 21-day EMA (~237.9) and MACD is positive with a positive histogram, suggesting upward momentum. News flow is mixed but includes multiple bullish takes on Apple\u2019s fundamentals (strong iPhone cycle, record FY results, services growth) alongside some valuation/macro caution (e.g., Berkshire trimming Apple in prior periods). With limited indicator coverage (missing RSI/SMA levels) and no analyst dataset provided, the setup supports maintaining exposure rather than aggressively adding.",
+        "signals": {
+          "trend": {
+            "price_above_ema21": true,
+            "ema21": 237.8686070165692
+          },
+          "momentum": {
+            "macd": 0.9313682783293586,
+            "macd_signal": 0.28138140270811396,
+            "macd_hist": 0.6499868756212447,
+            "macd_bullish": true
+          },
+          "news": {
+            "news_aggregate_sentiment": 0.09864999999999997,
+            "news_confidence": 0.396,
+            "headline_bias": "slightly_positive"
+          },
+          "liquidity": {
+            "recent_volume": 162456387.0
+          },
+          "data_gaps": {
+            "rsi14_missing": true,
+            "sma_levels_missing": true,
+            "analyst_entries_missing": true
+          }
+        },
+        "suggested_action": "hold",
+        "confidence": 0.62,
+        "recommended_size": "core position; add only incrementally (e.g., small tranche) rather than full-size due to limited signal coverage/valuation sensitivity",
+        "rationale": "Bullish momentum signals (price > EMA21, MACD positive) and slightly positive, moderately confident news flow favor holding. However, missing RSI/SMA context and mixed valuation narratives reduce conviction for an outright buy at this price."
+      }
+    }
+  ],
+  "account": {
+    "id": "9ee3d36d-9c5c-4bd0-96e3-4bc7a5b8dda1",
+    "admin_configurations": {},
+    "user_configurations": null,
+    "account_number": "PA3I2Z0NTRPL",
+    "status": "ACTIVE",
+    "crypto_status": "ACTIVE",
+    "options_approved_level": 3,
+    "options_trading_level": 3,
+    "currency": "USD",
+    "buying_power": "401364.96",
+    "regt_buying_power": "200203.75",
+    "daytrading_buying_power": "401364.96",
+    "effective_buying_power": "401364.96",
+    "non_marginable_buying_power": "99503.45",
+    "options_buying_power": "100101.87",
+    "bod_dtbp": "401364.96",
+    "cash": "99503.45",
+    "accrued_fees": "0",
+    "portfolio_value": "100700.3",
+    "pattern_day_trader": true,
+    "trading_blocked": false,
+    "transfers_blocked": false,
+    "account_blocked": false,
+    "created_at": "2025-07-21T21:29:27.503525Z",
+    "trade_suspended_by_user": false,
+    "multiplier": "4",
+    "shorting_enabled": true,
+    "equity": "100700.3",
+    "last_equity": "100700.3",
+    "long_market_value": "1196.85",
+    "short_market_value": "0",
+    "position_market_value": "1196.85",
+    "initial_margin": "598.43",
+    "maintenance_margin": "359.06",
+    "last_maintenance_margin": "359.06",
+    "sma": "100688.95",
+    "daytrade_count": 0,
+    "balance_asof": "2026-01-02",
+    "crypto_tier": 1,
+    "intraday_adjustments": "0",
+    "pending_reg_taf_fees": "0"
+  },
+  "positions": [
+    {
+      "asset_id": "69b15845-7c63-4586-b274-1cfdfe9df3d8",
+      "symbol": "GOOGL",
+      "exchange": "NASDAQ",
+      "asset_class": "us_equity",
+      "asset_marginable": true,
+      "qty": "2",
+      "avg_entry_price": "254.585",
+      "side": "long",
+      "market_value": "630.3",
+      "cost_basis": "509.17",
+      "unrealized_pl": "121.13",
+      "unrealized_plpc": "0.2378969695779406",
+      "unrealized_intraday_pl": "0",
+      "unrealized_intraday_plpc": "0",
+      "current_price": "315.15",
+      "lastday_price": "315.15",
+      "change_today": "0",
+      "qty_available": "2"
+    },
+    {
+      "asset_id": "4ce9353c-66d1-46c2-898f-fce867ab0247",
+      "symbol": "NVDA",
+      "exchange": "NASDAQ",
+      "asset_class": "us_equity",
+      "asset_marginable": true,
+      "qty": "3",
+      "avg_entry_price": "175.34",
+      "side": "long",
+      "market_value": "566.55",
+      "cost_basis": "526.02",
+      "unrealized_pl": "40.53",
+      "unrealized_plpc": "0.0770503022698757",
+      "unrealized_intraday_pl": "0",
+      "unrealized_intraday_plpc": "0",
+      "current_price": "188.85",
+      "lastday_price": "188.85",
+      "change_today": "0",
+      "qty_available": "3"
+    }
+  ],
+  "summary": {
+    "guard": {
+      "failed": [],
+      "sector_skipped": []
+    }
+  },
+  "planned": [
+    {
+      "symbol": "AAPL",
+      "qty": 5,
+      "price": 245.5,
+      "score": 55
+    }
+  ],
+  "note": "PLACE_ORDER not enabled; dry run"
+}

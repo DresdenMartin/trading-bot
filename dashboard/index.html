@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mag7 Live Desk</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div>
+          <p class="kicker">Live Portfolio Desk</p>
+          <h1>Mag7 Watch + Reallocate</h1>
+          <p class="subhead">
+            Real-time snapshot of the seven symbols, portfolio status, and the latest research-driven
+            ranking. Manual reallocation triggers the cloud run when you need it.
+          </p>
+        </div>
+        <div class="clock">
+          <a class="link" href="/history">History</a>
+          <div class="label">Last refresh</div>
+          <div id="last-refresh" class="time">--</div>
+          <div id="refresh-status" class="status">Idle</div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <div class="card">
+          <div class="card-head">
+            <h2>Watchlist</h2>
+            <button id="refresh-btn" class="ghost">Refresh</button>
+          </div>
+          <div id="watchlist" class="table"></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <h2>Open Orders</h2>
+            <button id="cancel-orders-btn" class="danger">Cancel All</button>
+          </div>
+          <div id="open-orders" class="table"></div>
+          <p id="open-orders-status" class="status">--</p>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <h2>Portfolio</h2>
+            <span class="tag">Alpaca</span>
+          </div>
+          <div id="portfolio" class="stack"></div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card wide">
+          <div class="card-head">
+            <h2>Latest Ranking</h2>
+            <span id="analysis-ts" class="tag">--</span>
+          </div>
+          <div id="ranking" class="table"></div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <h2>Manual Reallocation</h2>
+          </div>
+          <div class="stack">
+            <button id="reallocate-btn" class="primary">Run Reallocation Now</button>
+            <p id="reallocate-status" class="status">Idle.</p>
+            <p class="hint">
+              Uses current cloud settings (web research + full reallocation). Requires server-side
+              `PLACE_ORDER=true` to place real trades.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
