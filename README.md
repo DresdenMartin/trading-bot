@@ -1,5 +1,7 @@
 # Trading Bot
 
+**Use this folder (`trading-bot`) as the only project directory.** All code, scripts, and config live here—not in "trading-bot 2" or elsewhere.
+
 Automated trading bot with email alerts. Can run locally or on **GitHub Actions** (schedule or manual).
 
 ## Run on GitHub
