@@ -1,0 +1,187 @@
+{
+  "timestamp": "2025-10-01T05:03:18.941625+00:00",
+  "results": [
+    {
+      "symbol": "MSFT",
+      "latest_price": 517.9299926757812,
+      "news_sent": 0.0,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.1,
+      "details": {
+        "news_sent": 0.0,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.00, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "NVDA",
+      "latest_price": 176.6699981689453,
+      "news_sent": 0.0,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.1,
+      "details": {
+        "news_sent": 0.0,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.00, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "AMZN",
+      "latest_price": 231.47999572753903,
+      "news_sent": 0.02164419949633722,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.10973988977335175,
+      "details": {
+        "news_sent": 0.02164419949633722,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.02, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "META",
+      "latest_price": 778.3800048828125,
+      "news_sent": 0.039703203398951475,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.11786644152952817,
+      "details": {
+        "news_sent": 0.039703203398951475,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.04, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "GOOGL",
+      "latest_price": 254.72000122070312,
+      "news_sent": 0.019999999999999997,
+      "news_count": 5,
+      "news_sources": [
+        "newsapi",
+        "newsapi",
+        "newsapi",
+        "newsapi",
+        "newsapi"
+      ],
+      "news_confidence": 0.51,
+      "live_vs_fallback": false,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.109,
+      "details": {
+        "news_sent": 0.019999999999999997,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.02, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "TSLA",
+      "latest_price": 426.0700073242187,
+      "news_sent": 0.014570697379263113,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 58,
+      "combined": 0.10655681382066841,
+      "details": {
+        "news_sent": 0.014570697379263113,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=0.01, news_count=5, rsi=None, analyst=0.50"
+    },
+    {
+      "symbol": "AAPL",
+      "latest_price": 245.5,
+      "news_sent": -0.021527998005844224,
+      "news_count": 5,
+      "news_sources": [
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon",
+        "polygon"
+      ],
+      "news_confidence": 0.6,
+      "live_vs_fallback": true,
+      "analyst_buy_ratio": 0.5,
+      "tech_rsi": null,
+      "score": 57,
+      "combined": 0.09031240089737011,
+      "details": {
+        "news_sent": -0.021527998005844224,
+        "news_strength": 0.5,
+        "tech": 0.0,
+        "analyst": 0.0
+      },
+      "rationale": "news_sent=-0.02, news_count=5, rsi=None, analyst=0.50"
+    }
+  ]
+}

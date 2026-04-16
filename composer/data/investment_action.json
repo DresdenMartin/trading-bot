@@ -1,0 +1,66 @@
+{
+  "timestamp": "2026-01-04T22:49:58.731680+00:00",
+  "candidates": [
+    {
+      "symbol": "AAPL",
+      "suggested": "buy",
+      "score": 80,
+      "confidence": 0.7,
+      "latest_price": 150.0,
+      "analysis": {},
+      "norm": 0.5,
+      "scaled_score": 50,
+      "sector": "UNKNOWN",
+      "guard_failed": false
+    }
+  ],
+  "summary": {
+    "guard": {
+      "failed": [],
+      "sector_skipped": []
+    },
+    "orders": [
+      {
+        "symbol": "AAPL",
+        "action": "buy",
+        "qty": 13,
+        "status": "filled",
+        "fill_time_seconds": 5.0,
+        "filled_avg_price": 151.0,
+        "reference_price": 150.0,
+        "slippage": 1.0
+      }
+    ]
+  },
+  "account": {
+    "buying_power": "100000",
+    "cash": "100000"
+  },
+  "positions": [],
+  "openai_single_calls": 0,
+  "openai_batch_calls": 0,
+  "targets": [
+    {
+      "symbol": "AAPL",
+      "qty": 13,
+      "price": 150.0,
+      "confidence": 0.7
+    }
+  ],
+  "orders": [
+    {
+      "symbol": "AAPL",
+      "qty": 13,
+      "action": "buy",
+      "reference_price": 150.0,
+      "resp": {
+        "id": "order123",
+        "client_order_id": "2026-01-04::AAPL",
+        "submitted_at": "2025-01-01T00:00:00Z",
+        "filled_at": "2025-01-01T00:00:05Z",
+        "filled_avg_price": "151.0",
+        "status": "filled"
+      }
+    }
+  ]
+}

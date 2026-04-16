@@ -1,0 +1,204 @@
+{
+  "timestamp": "2026-04-15T21:38:17.912772+00:00",
+  "candidates": [
+    {
+      "symbol": "AAPL",
+      "score": 0.55,
+      "suggested": "hold",
+      "confidence": 0.55,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "AAPL closed at $245.50 with premarket activity at $258.79, showing a significant gap up. The EMA(14) is at 238.36, indicating the price is above the short-term trend. No RSI or SMA data available. Neutral news sentiment with no recent articles. The bid-ask spread is tight at 0.17%, suggesting good liquidity. The premarket strength may indicate positive overnight sentiment.",
+        "signals": {
+          "price_vs_ema": "bullish",
+          "premarket_gap": "bullish",
+          "news_sentiment": "neutral",
+          "liquidity": "good"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.55,
+        "recommended_size": null,
+        "rationale": "Price above EMA(14) with premarket strength suggests upside momentum, but lack of RSI/SMA data and neutral sentiment limit conviction. Insufficient data for aggressive positioning. Monitor for confirmation at market open before increasing exposure."
+      },
+      "latest_price": 245.5
+    },
+    {
+      "symbol": "NVDA",
+      "score": 0.5,
+      "suggested": "hold",
+      "confidence": 0.5,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "NVDA closed at $176.67 with premarket trading at $196.46, showing a significant gap up of approximately 11%. The EMA-14 at $176.44 suggests price is near the short-term moving average. Premarket bid-ask spread of 0.63% indicates normal liquidity. No recent news articles available; neutral sentiment baseline. Limited technical indicators restrict full analysis.",
+        "signals": {
+          "price_vs_ema": "slightly above",
+          "premarket_gap": "gap up 11%",
+          "bid_ask_spread": "normal",
+          "news_sentiment": "neutral"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.5,
+        "recommended_size": null,
+        "rationale": "Insufficient technical data (missing SMA, RSI) limits decisiveness. Premarket gap up is noteworthy but needs confirmation at market open. Price near EMA-14 shows no strong directional bias. Lack of recent news removes catalyst analysis. Recommend monitoring open price action before taking directional positions."
+      },
+      "latest_price": 176.6699981689453
+    },
+    {
+      "symbol": "AMZN",
+      "score": 0.45,
+      "suggested": "hold",
+      "confidence": 0.45,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "AMZN trading at $231.48 with premarket activity at $249.02, suggesting a significant gap up at market open. EMA-14 at $231.66 indicates price near short-term trend. Consumer Cyclical sector positioning. Limited technical signals due to missing SMA and RSI data. Neutral news sentiment with no recent articles. Gap up suggests bullish overnight sentiment but lacks confirmation from broader technical indicators.",
+        "signals": {
+          "price_vs_ema": "near_ema",
+          "premarket_gap": "gap_up_significant",
+          "sentiment": "neutral",
+          "bid_ask_spread": "tight"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.45,
+        "recommended_size": null,
+        "rationale": "Insufficient technical data (missing SMA-14 and RSI-14) limits confidence in directional calls. Premarket gap up is noteworthy but could reverse at open. No news catalyst identified. Wait for confirmed breakout above premarket levels or additional technical confirmation before taking a position."
+      },
+      "latest_price": 231.47999572753903
+    },
+    {
+      "symbol": "META",
+      "score": 0.45,
+      "suggested": "hold",
+      "confidence": 0.45,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "META is trading at $778.38 with a premarket close of $662.49, showing significant intraday movement. The EMA14 at $770.67 suggests slight upward momentum. Limited technical indicators (missing SMA14 and RSI14) and neutral sentiment (0.0) restrict full analysis. The stock shows volatility between premarket and regular session levels, requiring caution.",
+        "signals": {
+          "price_vs_ema": "above",
+          "premarket_gap": "significant_upside",
+          "sentiment": "neutral",
+          "volume_data": "unavailable"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.45,
+        "recommended_size": null,
+        "rationale": "Insufficient technical confirmation due to missing RSI and SMA data limits conviction. While price trades above EMA14, the large premarket gap and neutral sentiment provide mixed signals. Recommend waiting for more complete technical indicators and news catalysts before initiating positions."
+      },
+      "latest_price": 778.3800048828125
+    },
+    {
+      "symbol": "TSLA",
+      "score": 0.45,
+      "suggested": "hold",
+      "confidence": 0.45,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "TSLA is trading at $426.07, up significantly from premarket close of $364.16. The EMA(14) at $415.55 suggests a bullish short-term trend with price above the moving average. However, critical technical indicators (SMA, RSI) are unavailable, limiting analysis. No news sentiment data is available. The substantial premarket-to-current price jump warrants caution regarding gap sustainability.",
+        "signals": {
+          "price_vs_ema": "bullish",
+          "premarket_gap": "significant_up",
+          "sentiment": "neutral",
+          "technical_completeness": "limited"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.45,
+        "recommended_size": null,
+        "rationale": "While price above EMA14 is bullish, insufficient technical data (missing RSA, SMA, RSI) prevents confident directional conviction. Large premarket gap suggests volatility and potential profit-taking. Recommend waiting for additional technical confirmation and news catalysts before adding position."
+      },
+      "latest_price": 426.0700073242187
+    },
+    {
+      "symbol": "MSFT",
+      "score": 0.4,
+      "suggested": "hold",
+      "confidence": 0.4,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "MSFT is trading at $517.93 with a premarket close of $393.01, showing significant volatility. The EMA_14 of $513.82 suggests the current price is slightly above the short-term trend. No RSI or SMA data available to assess momentum or overbought conditions. Neutral news sentiment with no recent articles. The wide bid-ask spread in premarket trading indicates lower liquidity. Limited technical data restricts confidence in directional signals.",
+        "signals": {
+          "price_vs_ema": "above",
+          "news_sentiment": "neutral",
+          "liquidity": "low_premarket"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.4,
+        "recommended_size": null,
+        "rationale": "Insufficient technical indicators (missing SMA_14 and RSI_14) prevent reliable signal generation. Price is marginally above EMA_14, but without momentum confirmation or recent news catalysts, a hold stance is appropriate pending more complete data. Premarket conditions show thin liquidity."
+      },
+      "latest_price": 517.9299926757812
+    },
+    {
+      "symbol": "GOOGL",
+      "score": 0.35,
+      "suggested": "hold",
+      "confidence": 0.35,
+      "news_sentiment": 0.0,
+      "analysis": {
+        "summary": "GOOGL closed at $254.72 with premarket activity at $332.91, showing significant volatility. EMA(14) at $251.83 suggests slight upward momentum from the close. Neutral sentiment with no recent news articles available. Limited technical indicators due to missing SMA and RSI data restrict comprehensive analysis.",
+        "signals": {
+          "price_position": "near_ema",
+          "volatility": "high",
+          "sentiment": "neutral",
+          "technical_coverage": "incomplete"
+        },
+        "suggested_action": "hold",
+        "confidence": 0.35,
+        "recommended_size": null,
+        "rationale": "Insufficient technical indicators (missing SMA-14, RSI-14) and no news sentiment data limit conviction. Price near EMA suggests stability but premarket-to-regular session gap warrants caution. Hold pending more complete data."
+      },
+      "latest_price": 254.72000122070312
+    }
+  ],
+  "summary": {
+    "guard": {
+      "failed": [],
+      "sector_skipped": []
+    }
+  },
+  "account": {
+    "id": "88b19184-bce9-4667-84aa-4cadd471e3fd",
+    "admin_configurations": {},
+    "user_configurations": null,
+    "account_number": "PA3CG78LBLZQ",
+    "status": "ACTIVE",
+    "crypto_status": "ACTIVE",
+    "options_approved_level": 3,
+    "options_trading_level": 3,
+    "currency": "USD",
+    "buying_power": "199733.45",
+    "regt_buying_power": "199733.45",
+    "daytrading_buying_power": "0",
+    "effective_buying_power": "199733.45",
+    "non_marginable_buying_power": "99733.45",
+    "options_buying_power": "99866.72",
+    "bod_dtbp": "0",
+    "cash": "100000",
+    "accrued_fees": "0",
+    "portfolio_value": "100000",
+    "pattern_day_trader": false,
+    "trading_blocked": false,
+    "transfers_blocked": false,
+    "account_blocked": false,
+    "created_at": "2026-04-15T21:00:24.286414Z",
+    "trade_suspended_by_user": false,
+    "multiplier": "2",
+    "shorting_enabled": true,
+    "equity": "100000",
+    "last_equity": "100000",
+    "long_market_value": "0",
+    "short_market_value": "0",
+    "position_market_value": "0",
+    "initial_margin": "133.28",
+    "maintenance_margin": "0",
+    "last_maintenance_margin": "0",
+    "sma": "0",
+    "daytrade_count": 0,
+    "balance_asof": "2026-04-14",
+    "crypto_tier": 0,
+    "intraday_adjustments": "0",
+    "pending_reg_taf_fees": "0"
+  },
+  "positions": [],
+  "openai_single_calls": 0,
+  "openai_batch_calls": 0,
+  "note": "no buy recommendations found"
+}
